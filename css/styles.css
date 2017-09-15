@@ -211,7 +211,8 @@ TIP: Use media queries to reveal it on larger devices
 
 @media screen and (min-width: 992px) {
 
-  .movie:first-child .movie-backdrop {
+  .movie:first-child .movie-backdrop,
+  .movie:first-child .movie-overview {
       display: block;
     }
 
@@ -219,8 +220,8 @@ TIP: Use media queries to reveal it on larger devices
     display: none;
   }
 
-  :last-child {
-    display: block;
+  .movie:first-child {
+    width: 100%;
   }
 
   .movie-poster {
@@ -232,16 +233,10 @@ TIP: Use media queries to reveal it on larger devices
     width: 33%;
   }
 
-  .movie-backdrop {
-    display: none;
-  }
-
+  .movie-backdrop,
   .movie-overview {
     display: none;
   }
-
-
-
 
 
 }
