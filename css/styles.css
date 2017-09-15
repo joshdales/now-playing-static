@@ -125,6 +125,7 @@ figure {
 
   .site-nav-item {
     float: none;
+    width: 100%;
     text-align: center;
   }
 
@@ -230,7 +231,8 @@ TIP: Use media queries to reveal it on larger devices
 
   .movie {
     display: inline-block;
-    width: 33%;
+    width: 33.1%;
+    margin: 0 auto;
   }
 
   .movie-backdrop,
