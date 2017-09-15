@@ -138,7 +138,6 @@ figure {
 
 }
 
-
 /* MOVIE styles */
 .movie {
   position: relative;
@@ -210,6 +209,42 @@ TIP: Use media queries to reveal it on larger devices
   }
 }
 
+@media screen and (min-width: 992px) {
+
+  .movie:first-child .movie-backdrop {
+      display: block;
+    }
+
+  .movie:first-child .movie-poster {
+    display: none;
+  }
+
+  :last-child {
+    display: block;
+  }
+
+  .movie-poster {
+    display: inline-block;
+  }
+
+  .movie {
+    display: inline-block;
+    width: 33%;
+  }
+
+  .movie-backdrop {
+    display: none;
+  }
+
+  .movie-overview {
+    display: none;
+  }
+
+
+
+
+
+}
 /* FOOTER styles */
 .site-footer {
   text-align: center;
@@ -223,6 +258,7 @@ TIP: Use media queries to reveal it on larger devices
   display: inline-block;
   margin-right: 0.5em;
 }
+
 
 /*
 The :last-child pseudo-selector lets you select only the last element
