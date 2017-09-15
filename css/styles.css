@@ -17,15 +17,15 @@ body {
   margin: 0;
 
   /*
-    We need to add some padding to the bottom of the body on mobile so that
-     the footer won't get covered by our navigation
+  We need to add some padding to the bottom of the body on mobile so that
+  the footer won't get covered by our navigation
   */
   padding-bottom: 60px;
 }
 
 /*
-  This rule ensure that all images always fit in their container
-   but are never stretched beyond their native resolution
+This rule ensure that all images always fit in their container
+but are never stretched beyond their native resolution
 */
 img {
   max-width: 100%;
@@ -100,16 +100,16 @@ figure {
 }
 
 @media screen and (min-width: 768px){
-    header {
-      position: relative;
-    }
+  header {
+    position: relative;
+  }
 
-    .site-logo {
-      width: 4rem;
-      display: inline-block;
-      float: none;
-      z-index: 200;
-    }
+  .site-logo {
+    width: 4rem;
+    display: inline-block;
+    float: none;
+    z-index: 200;
+  }
 
   .site-nav {
     position: fixed;
@@ -122,7 +122,7 @@ figure {
   .site-nav-list {
     margin-top: 6rem;
   }
-  
+
   .site-nav-item {
     float: none;
     text-align: center;
@@ -150,8 +150,8 @@ figure {
 }
 
 /*
-  Hide the poster on mobile devices, only show backdrop
-  TIP: Use media queries to reveal it on larger devices
+Hide the poster on mobile devices, only show backdrop
+TIP: Use media queries to reveal it on larger devices
 */
 .movie-poster {
   display: none;
@@ -167,19 +167,19 @@ figure {
   color: #ffffff;
 
   /*
-    Linear gradients are a bit of an advanced CSS3 feature.
-      As seen below you specify the linear-gradient as a value for
-      the `background-image` property. It creates a gradient with as many stops
-      as you care to define. To learn more about how it works, read this article
-      and the related docs: https://medium.com/@patrickbrosset/do-you-really-understand-css-linear-gradients-631d9a895caf#.6yl8vdmiv
+  Linear gradients are a bit of an advanced CSS3 feature.
+  As seen below you specify the linear-gradient as a value for
+  the `background-image` property. It creates a gradient with as many stops
+  as you care to define. To learn more about how it works, read this article
+  and the related docs: https://medium.com/@patrickbrosset/do-you-really-understand-css-linear-gradients-631d9a895caf#.6yl8vdmiv
   */
 
   background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.7) 100%);
 }
 
 /*
-  Hide the overview on mobile devices
-  TIP: Use media queries to reveal it on larger devices
+Hide the overview on mobile devices
+TIP: Use media queries to reveal it on larger devices
 */
 .movie-overview {
   display: none;
@@ -200,6 +200,15 @@ figure {
   line-height: 1.1;
 }
 
+@media screen and (min-width: 768px){
+  main {
+    margin-left: 60px;
+  }
+
+  .movie-overview {
+    display: inline;
+  }
+}
 
 /* FOOTER styles */
 .site-footer {
@@ -216,9 +225,9 @@ figure {
 }
 
 /*
-  The :last-child pseudo-selector lets you select only the last element
-    within a containing element. Similarly, there's a :first-child pseudo-selector
-    to select the first child of a containing element.
+The :last-child pseudo-selector lets you select only the last element
+within a containing element. Similarly, there's a :first-child pseudo-selector
+to select the first child of a containing element.
 */
 .footer-nav-item:last-child {
   margin-right: 0;
@@ -233,4 +242,32 @@ figure {
 
 .about > p {
   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-bottom: 0px;
+  }
+
+  .footer {
+    margin-left: 60px;
+  }
+
+  .footer-nav{
+    padding: 0;
+    display: inline-block;
+    width: 48%;
+  }
+
+  .about {
+    display: inline-block;
+    width: 48%;
+  }
+
+  footer.site-footer,
+  .about {
+    background: black;
+    color: white;
+  }
+
 }
