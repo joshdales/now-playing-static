@@ -100,6 +100,16 @@ figure {
 }
 
 @media screen and (min-width: 768px){
+    header {
+      position: relative;
+    }
+
+    .site-logo {
+      width: 4rem;
+      display: inline-block;
+      float: none;
+      z-index: 200;
+    }
 
   .site-nav {
     position: fixed;
@@ -109,12 +119,13 @@ figure {
     width: 6rem;
   }
 
-  .site-logo {
-
+  .site-nav-list {
+    margin-top: 6rem;
   }
-
+  
   .site-nav-item {
     float: none;
+    text-align: center;
   }
 
   .site-nav-item-label {
